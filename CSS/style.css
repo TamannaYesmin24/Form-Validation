@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left , rgb(236, 0, 157), rgb(153, 5, 238), rgb(28, 5, 238));
+}
+.main{
+    width: 500px;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+}
+.form-field input{
+    width: 100%;
+    padding: 8px 15px;
+    box-sizing: border-box;    
+    outline: none;
+    border-radius: 10px;
+}
+.main-body button{
+    padding: 8px 25px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    background-color: teal;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    /* width: 100%;     */
+    box-sizing: border-box;
+}
+.err_msg{
+    color: red;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.passhow{
+    position: relative;
+}
+.passhow button{
+    position: absolute;
+    top: -35px;
+    right: 0;
+    margin-top: 0;
+    background: rgb(15, 124, 187);
+    padding: 9px 10px;
+    border-radius: 10px;
+}
+

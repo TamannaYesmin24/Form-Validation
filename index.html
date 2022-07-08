@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h2>register here</h2>
+        </div>
+        <div class="main-body">
+            <form action="#" method="post">
+                <div class="form-field">
+                    <input type="text" placeholder="username" id="username">
+                    <div class="err_msg" id="err_name"></div>
+                </div>
+                <div class="form-field">
+                    <input type="email" placeholder="example@gmail.com" id="email">
+                    <div class="err_msg" id="err_mail"></div>
+                </div>
+                <!--password show & hide start -->
+                <div class="form-field">
+                    <input type="password" placeholder="your password" id="password">
+                    <div class="passhow">
+                        <button onclick="passhow()" type="button" id="eye"><i class="fa-solid fa-eye-slash"></i></button>
+                    </div>
+
+                    <div class="err_msg" id="err_password"></div>
+                </div>
+                <!-- password show & hide end -->
+                <div class="form-field">
+                    <input type="password" placeholder="confirm password" id="cpassword">
+                    <div class="err_msg" id="err_cpassword"></div>
+                </div>
+                
+                    <label>Gender:</label>
+                <input type="radio" name="gender" id="gnder1">Male
+                <input type="radio" name="gender" id="gnder2">Female
+                <input type="radio" name="gender" id="gnder3">Other
+                <div id="msg"></div>
+
+                <button onclick= "return signin()" type="submit">sign up</button>
+            </form>
+        </div>
+    </div>    
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
